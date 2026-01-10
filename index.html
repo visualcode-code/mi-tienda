@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Tienda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Mi Tienda</h1>
+  </header>
+
+  <main class="contenedor" id="productos">
+    <!-- Productos generados por JS -->
+  </main>
+  <button onclick="loginAdmin()">🔐 Acceso administrador</button>
+  <section class="carrito admin" id="panelAdmin">
+  <h2>📦 Pedidos recibidos</h2>
+
+  <button onclick="exportarExcel()">Exportar pedidos a Excel</button>
+
+  <ul id="lista-pedidos"></ul>
+</section>
+  <ul id="lista-pedidos"></ul>
+</section>
+  <h2>🛒 Carrito</h2>
+  <ul id="lista-carrito"></ul>
+  <p id="total"></p>
+
+  <button onclick="finalizarCompra()">Finalizar compra</button>
+  <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+  <p id="mensaje"></p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
